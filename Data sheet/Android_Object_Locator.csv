@@ -1,0 +1,123 @@
+Field_name,Field_locator_name,Field_locator_value
+welcome_login,xpath,//android.widget.TextView[@text='Log In']
+welcome_signup,xpath,//android.widget.TextView[@text='Sign Up']
+mph_logo,xpath,//android.widget.ImageView
+login_page_title,xpath,//android.view.View[6]/android.view.View[2]
+signup_page_title,xpath,//android.widget.TextView[2]
+welcome_page_title,xpath,//android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView
+signup_page_back,xpath,"//android.widget.Button[@content-desc=""Go Back, back""]"
+signup_first_name,xpath,//android.view.ViewGroup/android.widget.EditText[1]
+signup_last_name,xpath,//android.view.ViewGroup/android.widget.EditText[2]
+signup_email_id,xpath,//android.view.ViewGroup/android.widget.EditText[3]
+signup_phone_number,xpath,//android.view.ViewGroup/android.widget.EditText[4]
+signup_password,xpath,//android.view.ViewGroup/android.widget.EditText[5]
+signup_confirm_password,xpath,//android.view.ViewGroup/android.widget.EditText[6]
+signup_terms_and_conditions,xpath,//android.view.ViewGroup[6]
+signup_firstname_valid_msg,xpath,//android.view.ViewGroup/android.widget.TextView[4]
+signup_emailid_blank_valid_msg,xpath,//android.view.ViewGroup/android.widget.TextView[6]
+signup_lastname_valid_msg,xpath,//android.view.ViewGroup/android.widget.TextView[5]
+signup_exist_valid_msg,xpath,//android.view.ViewGroup/android.widget.TextView[7]
+signup_emailid_valid_msg,xpath,//android.view.ViewGroup/android.widget.TextView[6]
+signup,xpath,//android.view.ViewGroup[7]/android.widget.TextView
+signup_phonenumber_valid_msg,xpath,//android.widget.TextView[7]
+login_link,xpath,//android.widget.TextView[@text='Log In']
+signup_link,xpath,//android.view.View[@resource-id='signup']
+confirm_password,xpath,//android.view.ViewGroup/android.widget.EditText[6]
+password_valid_msg,xpath,//android.widget.TextView[6]
+passwordstrength_valid_msg,xpath,//android.view.ViewGroup[3]/android.widget.TextView
+passwordmatch_valid_msg,xpath,//android.widget.TextView[5]
+signup_referral_code,xpath,//android.widget.EditText[7]
+signup_show_password,xpath,//android.view.ViewGroup[2]
+signup_apply_button,xpath,//android.view.ViewGroup[5]/android.view.ViewGroup
+signup_referral_code_invalid_msg,xpath,//android.widget.TextView[@text='Invalid referral code']
+signup,xpath,//android.view.ViewGroup[7]
+otp_1,xpath,//android.widget.EditText[@index='3']
+otp_2,xpath,//android.widget.EditText[@index='4']
+otp_3,xpath,//android.widget.EditText[@index='5']
+otp_4,xpath,//android.widget.EditText[@index='6']
+otp_verify,xpath,//android.widget.TextView[@text='Verify']
+otp_page_title,xpath,//android.widget.TextView[@text='Enter code']
+plus_one,xpath,//android.view.View[16]/android.widget.TextView
+signup_now,xpath,//android.widget.TextView[2][@text='Sign Up Now.']
+login,xpath,//android.view.View[30]
+login_invalid_msg,xpath,//android.view.View[9]/android.widget.TextView
+login_validate_msg,xpath,//div[@class='content']/div[6]/div[2]/input
+login_negative_validate_msg,xpath,//div[@class='content']/div[2]/div[2]
+login_phone_number,xpath,//android.widget.EditText[@resource-id='inputUsername']
+login_password,xpath,//android.widget.EditText[@resource-id='inputPassword']
+hamburger,xpath,//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.TextView
+header_contact_us,xpath,//android.view.ViewGroup[8]
+header_contact_fname,xpath,//android.widget.EditText[@resource-id='input_5_10']
+header_contact_lname,xpath,//android.widget.EditText[@resource-id='input_5_11']
+header_contact_email,xpath,//android.view.View[3]/android.widget.EditText
+header_contactus_feedback,xpath,//android.view.View[4]/android.widget.EditText
+header_contactus_submit,xpath,//android.widget.Button[@resource-id='gform_submit_button_5']
+header_feedback_your_feedback,xpath,//android.widget.EditText[@resource-id='ideas_idea_name']
+header_feedback_more_detail,xpath,//android.widget.EditText[@text='Please provide the details']
+header_feedback_email,xpath,//android.widget.EditText[@resource-id='ideas_idea_user_email']
+header_feedback_share,xpath,//android.widget.Button[@resource-id='save-button']
+header_contact_us_title,xpath,//android.view.View[@text='Contact Us']
+header_profile,xpath,//android.view.ViewGroup[2]
+header_profile_title,xpath,//android.widget.TextView[@text='First name:']
+header_rating,xpath,//android.view.ViewGroup[3]
+header_rating_title,xpath,//android.widget.TextView[@text='Explore Services']
+header_alert,xpath,//android.view.ViewGroup[4]
+header_alert_title,xpath,//android.view.View[@text='Your alerts']
+header_feedback,xpath,//android.view.ViewGroup[5]
+header_feedback_portal,xpath,//android.view.View[@text='Mpowered Health Feedback Portal']
+header_FAQ,xpath,//android.view.ViewGroup[7]
+header_FAQ_title,xpath,//android.widget.TextView[@text='Frequently asked questions']
+header_privacy_policy,xpath,//android.view.ViewGroup[9]
+header_privacy_ok,xpath,//android.widget.TextView[@text='OK']
+header_terms_conditions,xpath,//android.view.ViewGroup[10]
+header_terms_conditions_ok,xpath,//android.widget.TextView[@text='OK']
+header_feedback_thankyou,xpath,//android.view.View[4]/android.view.View[1]
+logout,xpath,//android.view.ViewGroup[11]
+back_button,xpath,//android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.Button
+utilities,xpath,//android.widget.TextView[@text='Utilities']
+utilities_wallet,xpath,//android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.ImageView
+utilities_awardpoints,xpath,//android.view.ViewGroup[2]/android.view.ViewGroup/android.widget.ImageView
+utilities_awardpoints_title,xpath,//android.view.View
+utilities_add_payment_button,xpath,//android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup
+utilities_card_number,xpath,"//android.widget.EditText[@text=', Card number']"
+utilities_card_expiry,xpath,"//android.widget.EditText[@text=', Expiration date']"
+utilities_card_cvc,xpath,"//android.widget.EditText[@text=', CVC']"
+utilities_card_post,xpath,//android.widget.EditText[@text='Postal code']
+utilities_card_phoneno,xpath,//android.widget.EditText[3]
+home,xpath,//android.widget.Button[1]//android.widget.ImageView
+utilities_back,xpath,//android.view.ViewGroup[1]/android.view.ViewGroup/android.widget.Button
+utilities_deactivate,xpath,//android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView
+utilities_idcard,xpath,//android.view.ViewGroup[3]//android.widget.ImageView
+utilities_ok_button,xpath,//android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup
+utilities_settings,xpath,//android.view.ViewGroup[4]//android.widget.ImageView
+utilities_upload,xpath,//android.view.ViewGroup[5]//android.widget.ImageView
+utilities_add_debit_credit_card,xpath,//android.widget.TextView[2]
+utilities_card_city,xpath,//android.widget.EditText[4]
+utilities_card_state,xpath,//android.widget.Spinner/android.widget.TextView
+utilities_card_saveas,xpath,//android.view.ViewGroup/android.widget.EditText[1]
+utilities_card_name,xpath,//android.widget.EditText[2]
+utilities_card_address1,xpath,//android.widget.EditText[4]
+utilities_card_address2,xpath,//android.widget.EditText[5]
+utilities_card_save,xpath,//android.view.ViewGroup[3]
+utilities_card_title,xpath,//android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView
+utilities_plus_icon,xpath,//android.view.ViewGroup[2]/android.widget.ImageView
+utilities_add_bank,xpath,//android.widget.TextView[4]
+utilities_add_bank_title,xpath,//android.view.View
+utilities_bank_saveas,xpath,//android.widget.EditText[1]
+utilities_bank_name,xpath,//android.widget.EditText[2]
+utilities_bank_routingno,xpath,//android.widget.EditText[3]
+utilities_bank_holdertype,xpath,//android.widget.Spinner/android.widget.TextView
+utilities_bank_accountno,xpath,//android.widget.EditText[4]
+utilities_bank_checkbox,xpath,//android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView
+utilties_bank_save_button,xpath,//android.view.ViewGroup[4]/android.widget.TextView
+utilities_deactivate_title,xpath,//android.view.View
+utilities_deactivate_cancel,xpath,//android.view.ViewGroup[8]
+awardpoints_redeeem_points_button,xpath,//android.view.ViewGroup[2]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup
+redeem_points_title,xpath,//android.view.View
+redeem_points_giftcard,xpath,//android.widget.Spinner/android.widget.TextView
+redeem_points_amount,xpath,//android.widget.EditText
+redeem_points_button,xpath,//android.view.ViewGroup[8]
+redeem_points_emailid,xpath,//android.widget.TextView[10]
+redeemed_page_title,xpath,//android.view.View
+redeem_points_goto_awardpoints_buton,xpath,//android.view.ViewGroup[2]/android.view.ViewGroup[2]
+utilities_awardpoints_history_title,xpath,//android.widget.ScrollView/android.view.ViewGroup/android.widget.TextView
