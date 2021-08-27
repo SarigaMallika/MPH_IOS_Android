@@ -75,12 +75,15 @@ public class Generic_functions {
 		prop.load(fileInput);
 		platformName=getPlatformName();
 		if (platformName.equals("iOS")) {
+			driver.launchApp();
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
 	        capabilities.setCapability(MobileCapabilityType.UDID, get_IOSUDID());
 	        capabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID, getBundleId());
 	        driver = new IOSDriver<>(getToken(),capabilities,"https://localhost:8585");
-	        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	       // driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
+
+			page_wait(5000);
 		}	
 		else if (platformName.equals("Android")) {
 			DesiredCapabilities cap= new DesiredCapabilities();
@@ -267,7 +270,11 @@ public class Generic_functions {
 	
 	/*close the application*/
 	public static void close() {
-		driver.closeApp();
+		if(platformName.equals("Android")){
+		driver.closeApp();}
+		else {
+
+		}
 	}
 	
 	 /*  Taking Screenshot of failed test cases  */

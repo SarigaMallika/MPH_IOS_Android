@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Validation on Home Page" skipped="0" tests="5" time="2.8" timestamp="2021-08-26 05:26:07"><testcase name="Validate that the user is navigated to Welcome page"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+Reusable_Functions.Generic_functions.click(Generic_functions.java:263)&#13;
+Reusable_Functions.Generic_functions.login(Generic_functions.java:291)&#13;
+Stepdefinition.Homepage_positive_scenario.home_positive_tc_001(Homepage_positive_scenario.java:31)&#13;
+✽.Click on 'Welcome Login' button(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/10_Homepage_positive_scenario.feature:5)&#13;
+</system-err></testcase><testcase name="Validate that the user is able to Login with valid data"/><testcase name="Validate that the user is in Home page"/><testcase name="Validate that the user is navigated to the Second Opinion page on clicking 'Request for second opinion' button"/><testcase name="Validate that the user is navigated to the  Refer a friend page on clicking 'Refer a friend' button"/></testsuite>

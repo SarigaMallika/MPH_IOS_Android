@@ -19,6 +19,7 @@ public class Landing_positive_scenarios extends Generic_functions{
 			page_wait(4000);			
 		} catch (Exception e) {
 			e.printStackTrace();
+			takeScreenShot("launch_url");
 		}
 	}
 	@Then("navigated to Welcome page")
@@ -69,9 +70,11 @@ public class Landing_positive_scenarios extends Generic_functions{
 				click("continue");
 				page_wait(3000);
 			}
-			page_wait(2000);
-			click("welcome_login");			
-			page_wait(3000);
+			else {
+				page_wait(2000);
+				click("welcome_login");
+				page_wait(3000);
+			}
 		}catch(Exception e) {
 			e.printStackTrace();
 			takeScreenShot("landing_positive_clicks_login");
