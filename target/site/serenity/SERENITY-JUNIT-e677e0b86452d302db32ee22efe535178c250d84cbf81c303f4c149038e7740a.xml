@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Validation on Sign Up Page negative test case" skipped="0" tests="3" time="1.23" timestamp="2021-08-11 08:14:23"><testcase name="Verify the scenario when entering different data in 'Password' and 'Confirm Password'"><error message="Cannot invoke &quot;String.equals(Object)&quot; because &quot;Reusable_Functions.Generic_functions.platformName&quot; is null" type="java.lang.NullPointerException">Cannot invoke "String.equals(Object)" because "Reusable_Functions.Generic_functions.platformName" is null</error><system-err>Cannot invoke "String.equals(Object)" because "Reusable_Functions.Generic_functions.platformName" is null&#13;
+Reusable_Functions.Generic_functions.OR_reader(Generic_functions.java:189)&#13;
+Reusable_Functions.Generic_functions.click(Generic_functions.java:260)&#13;
+Stepdefinitions.Signup_negative_scenario.signup_negative_validation_msg(Signup_negative_scenario.java:49)&#13;
+✽.Verify the validation message(file:///C:/Users/Admin/eclipse-workspace/MPH-IOS-Android/src/test/resources/features/02_Signup_negative_scenario.feature:8)&#13;
+</system-err></testcase><testcase name="Validate the 'Apply' button disabled when Referral code field is blank"><error message="user Dir is not specified in the Config.properties" type="java.lang.RuntimeException">user Dir is not specified in the Config.properties</error><system-err>user Dir is not specified in the Config.properties&#13;
+Reusable_Functions.Generic_functions.getDir(Generic_functions.java:146)&#13;
+Reusable_Functions.Generic_functions.takeScreenShot(Generic_functions.java:276)&#13;
+Stepdefinitions.Signup_negative_scenario.referral_code_blank(Signup_negative_scenario.java:191)&#13;
+✽.Referral code is blank(file:///C:/Users/Admin/eclipse-workspace/MPH-IOS-Android/src/test/resources/features/02_Signup_negative_scenario.feature:11)&#13;
+</system-err></testcase><testcase name="Validate that the user should get a  validation message on entering invalid referral code"><error message="Cannot invoke &quot;String.equals(Object)&quot; because &quot;Reusable_Functions.Generic_functions.platformName&quot; is null" type="java.lang.NullPointerException">Cannot invoke "String.equals(Object)" because "Reusable_Functions.Generic_functions.platformName" is null</error><system-err>Cannot invoke "String.equals(Object)" because "Reusable_Functions.Generic_functions.platformName" is null&#13;
+Reusable_Functions.Generic_functions.OR_reader(Generic_functions.java:189)&#13;
+Reusable_Functions.Generic_functions.click(Generic_functions.java:260)&#13;
+Stepdefinitions.Signup_negative_scenario.signup_negative_validation_msg(Signup_negative_scenario.java:49)&#13;
+✽.Verify the validation message(file:///C:/Users/Admin/eclipse-workspace/MPH-IOS-Android/src/test/resources/features/02_Signup_negative_scenario.feature:16)&#13;
+</system-err></testcase></testsuite>

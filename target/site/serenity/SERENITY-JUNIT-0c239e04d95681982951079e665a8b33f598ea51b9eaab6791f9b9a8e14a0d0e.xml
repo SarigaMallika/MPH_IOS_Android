@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="10" failures="0" name="Verify the header page positive scenarios" skipped="0" tests="11" time="2.09" timestamp="2021-08-26 05:26:00"><testcase name="Validate that the mpowered health logo/hamburger in the header"/><testcase name="Validation of the Drop down tab"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Stepdefinition.Header_positive_scenario.verify_dropdown_options(Header_positive_scenario.java:65)&#13;
-✽.Verify the drop down options(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:10)&#13;
-</system-err></testcase><testcase name="Validate profile page on clicking  Your profile tab"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.click(Generic_functions.java:263)&#13;
-Stepdefinition.Header_positive_scenario.click_your_profile(Header_positive_scenario.java:72)&#13;
-✽.click on  Your profile(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:13)&#13;
-</system-err></testcase><testcase name="Validate  Your ratings dashboard"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_your_ratings(Header_positive_scenario.java:91)&#13;
-✽.click on  Your ratings(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:18)&#13;
-</system-err></testcase><testcase name="Validate the alerts page"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_alerts_icon(Header_positive_scenario.java:111)&#13;
-✽.Click on Your alerts icon(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:23)&#13;
-</system-err></testcase><testcase name="Validate Help or FAQ  page"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_help_icon(Header_positive_scenario.java:130)&#13;
-✽.click on Help icon(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:28)&#13;
-</system-err></testcase><testcase name="Validate  Privacy Policy dialogue box on clicking on the Privacy Policy"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_privacy_policy(Header_positive_scenario.java:190)&#13;
-✽.click on  Privacy Policy(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:33)&#13;
-</system-err></testcase><testcase name="Validate Terms &amp; Conditions dialogue box on clicking on the Terms &amp; Conditions"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_terms_conditions(Header_positive_scenario.java:209)&#13;
-✽.click on  Terms &amp; Conditions(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:37)&#13;
-</system-err></testcase><testcase name="Validate the Contact Us page"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_contact_us(Header_positive_scenario.java:149)&#13;
-✽.click on  Contact Us(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:41)&#13;
-</system-err></testcase><testcase name="Validate that the user is navigated to the Feedback Port   page  on clicking Feedback"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Reusable_Functions.Generic_functions.page_wait(Generic_functions.java:135)&#13;
-Stepdefinition.Header_positive_scenario.click_feedback(Header_positive_scenario.java:235)&#13;
-✽.click on  Feedback(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:45)&#13;
-</system-err></testcase><testcase name="Validate the Landing page on clicking Log out icon"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-Stepdefinition.Header_positive_scenario.verify_landing_page(Header_positive_scenario.java:298)&#13;
-✽.Verify navigation to the Landing  page(file:///D:/automation/MpoweredHealth_repos/DEvice%20automation/MPH-IOS-ANDROID-4-main/src/test/resources/features/06_Header_positive_scenario.feature:51)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Verify the header page positive scenarios" skipped="0" tests="11" time="125.16" timestamp="2021-08-02 09:12:48"><testcase name="Validate that the mpowered health logo/hamburger in the header"/><testcase name="Validation of the Drop down tab"/><testcase name="Validate profile page on clicking  Your profile tab"/><testcase name="Validate  Your ratings dashboard"/><testcase name="Validate the alerts page"/><testcase name="Validate Help or FAQ  page"/><testcase name="Validate  Privacy Policy dialogue box on clicking on the Privacy Policy"/><testcase name="Validate Terms &amp; Conditions dialogue box on clicking on the Terms &amp; Conditions"/><testcase name="Validate the Contact Us page"/><testcase name="Validate that the user is navigated to the Feedback Port   page  on clicking Feedback"/><testcase name="Validate the Landing page on clicking Log out icon"><error message="An element could not be located on the page using the given search parameters.&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, databaseEnabled: false, desired: {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, deviceName: POCO X3, platformName: android, platformVersion: 10, udid: 249b5754}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: 249b5754, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 249b5754, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 91, takesScreenshot: true, udid: 249b5754, viewportRect: {height: 2088, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 0a20b403-f88e-447d-bd62-6243a44c9fc2&#10;*** Element info: {Using=xpath, value=//android.view.ViewGroup/android.widget.ImageView}&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: driver.version: AndroidDriver" type="org.openqa.selenium.NoSuchElementException">An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, databaseEnabled: false, desired: {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, deviceName: POCO X3, platformName: android, platformVersion: 10, udid: 249b5754}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: 249b5754, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 249b5754, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 91, takesScreenshot: true, udid: 249b5754, viewportRect: {height: 2088, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0a20b403-f88e-447d-bd62-6243a44c9fc2
+*** Element info: {Using=xpath, value=//android.view.ViewGroup/android.widget.ImageView}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: AndroidDriver</error><system-err>An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, databaseEnabled: false, desired: {appActivity: com.mpoweredhealth.MainActi..., appPackage: com.mpoweredhealth.dev, deviceName: POCO X3, platformName: android, platformVersion: 10, udid: 249b5754}, deviceApiLevel: 29, deviceManufacturer: Xiaomi, deviceModel: M2007J20CI, deviceName: 249b5754, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: 249b5754, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 91, takesScreenshot: true, udid: 249b5754, viewportRect: {height: 2088, left: 0, top: 91, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0a20b403-f88e-447d-bd62-6243a44c9fc2
+*** Element info: {Using=xpath, value=//android.view.ViewGroup/android.widget.ImageView}
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-NG3RBDE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: AndroidDriver&#13;
+io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)&#13;
+io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)&#13;
+io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)&#13;
+io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)&#13;
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)&#13;
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#13;
+io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)&#13;
+io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)&#13;
+io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)&#13;
+io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)&#13;
+io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)&#13;
+io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)&#13;
+io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)&#13;
+Stepdefinitions.Header_positive_scenario.verify_landing_page(Header_positive_scenario.java:298)&#13;
+✽.Verify navigation to the Landing  page(file:///C:/Users/Admin/eclipse-workspace/MPH-IOS-Android/src/test/resources/features/06_Header_positive_scenario.feature:51)&#13;
 </system-err></testcase></testsuite>

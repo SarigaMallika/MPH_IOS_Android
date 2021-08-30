@@ -19,7 +19,6 @@ public class Signup_negative_scenario extends Generic_functions{
 			click("welcome_signup");
 		} catch (Exception e) {
 			e.printStackTrace();
-			takeScreenShot("app_launching");
 		}
 	}	
 	@When("Enter invalid 'Firstname' and 'Lastname' details")

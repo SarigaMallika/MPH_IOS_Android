@@ -75,15 +75,12 @@ public class Generic_functions {
 		prop.load(fileInput);
 		platformName=getPlatformName();
 		if (platformName.equals("iOS")) {
-			driver.launchApp();
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 	        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
 	        capabilities.setCapability(MobileCapabilityType.UDID, get_IOSUDID());
 	        capabilities.setCapability(IOSMobileCapabilityType.BUNDLE_ID, getBundleId());
 	        driver = new IOSDriver<>(getToken(),capabilities,"https://localhost:8585");
-	       // driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-
-			page_wait(5000);
+	        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		}	
 		else if (platformName.equals("Android")) {
 			DesiredCapabilities cap= new DesiredCapabilities();
@@ -270,17 +267,15 @@ public class Generic_functions {
 	
 	/*close the application*/
 	public static void close() {
-		if(platformName.equals("Android")){
-		driver.closeApp();}
-		else {
-
-		}
+		driver.closeApp();
 	}
 	
 	 /*  Taking Screenshot of failed test cases  */
 	public static  void takeScreenShot(String fileName) throws Exception {
-		BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
-		ImageIO.write(image, "png", new File(getDir()+fileName+".png")); 	
+		TakesScreenshot scrShot =((TakesScreenshot)driver);
+		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		File DestFile=new File(getDir()+fileName+".png");
+		FileUtils.copyFile(SrcFile, DestFile);
 	}
 		
 	/*Function to clear the value in a particular field*/
@@ -313,8 +308,7 @@ public class Generic_functions {
 }
 		/*Function for explicit wait */
 		public static void page_explicit_wait(String fieldname,int time) throws IOException {
-			//Changed to milliseconds
-			WebDriverWait wait=new WebDriverWait(driver,TimeUnit.MILLISECONDS.toSeconds(time));
+			WebDriverWait wait=new WebDriverWait(driver, time);
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR_reader(fieldname))));
 		}
 		
