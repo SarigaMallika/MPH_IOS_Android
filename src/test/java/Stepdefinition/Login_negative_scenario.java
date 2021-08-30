@@ -19,7 +19,7 @@ public class Login_negative_scenario extends Generic_functions{
 		page_wait(2000);	
 	}
 	@When("clicks on login button")
-	public void login() throws Exception {
+	public static void login() throws Exception {
 		try {
 			if (platformName.equals("iOS")) {
 				page_wait(2000);
@@ -40,7 +40,7 @@ public class Login_negative_scenario extends Generic_functions{
 	
 	/* TC_002 - Validate that the user should get a validation message on entering invalid credentials in the 'Login' Page */
 	@When("enters invalid phone no and password")
-	public void enters_invalid_phoneno_and_password() throws Exception {
+	public static void enters_invalid_phoneno_and_password() throws Exception {
 		try {
 			page_wait(5000);
 			click("login_phone_number");

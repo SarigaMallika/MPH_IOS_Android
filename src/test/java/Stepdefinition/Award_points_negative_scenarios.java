@@ -20,7 +20,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 
 	// TC_001-Validate that the user is navigated to Welcome page	
 	@Given("user on home page")
-	public void launchTheURL() throws Exception {
+	public static void launchTheURL() throws Exception {
 		try {
 			app_launch();
 			page_wait(2000);
@@ -32,7 +32,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 		}	
 	}
 	@When("Navigated to home page")
-	public void Award_points_negative_tc_001() throws Exception {
+	public static void Award_points_negative_tc_001() throws Exception {
 		try {
 			page_wait(10000);
 			page_explicit_wait("home",6000);
@@ -59,7 +59,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 	}
 
 	@Then("validate Award points page")
-	public void click_award_points() throws Exception {
+	public static void click_award_points() throws Exception {
 		try {
 			value = driver.findElement(By.xpath(OR_reader("utilities_awardpoints_title"))).isDisplayed();
 			Assert.assertEquals(true,value);
@@ -71,7 +71,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 
 	// TC 001 - Verify the validation message on entering amount more than the available amount in "Redeem Award Points" page
 	@Given("Click on redeem points button")
-	public void click_redeem_points() throws Exception {
+	public static void click_redeem_points() throws Exception {
 		try {
 			page_wait(3000);
 			click("awardpoints_redeeem_points_button");
@@ -81,7 +81,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 		}
 	}
 	@When("Enter the amount more than available amount")
-	public void greater_amount() throws Exception, InterruptedException {
+	public static void greater_amount() throws Exception, InterruptedException {
 		try{
 			if((platformName.equals("Android"))){
 				click("redeem_points_giftcard");
@@ -108,7 +108,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 	}
 
 	@Then("Validate the message on award points page")
-	public void Award_point_negative() throws Exception {
+	public static void Award_point_negative() throws Exception {
 		try{
 			page_wait(3000);
 			str= driver.findElement(By.xpath(OR_reader("redeempoints_amount_invalid_msg"))).getText();
@@ -122,7 +122,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 
 	//TC 003 - Validate the validation message on entering amount less than the available amount in "Redeem Award Points" page
 	@When("Enter the amount less than the available amount")
-	public void lesser_Amount() throws Exception {
+	public static void lesser_Amount() throws Exception {
 		try{
 			field_clear("redeem_points_amount");
 			click("redeem_points_amount");
@@ -136,7 +136,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 	}
 
 	@Then("Validate the message on award points page on less amount")
-	public void Award_point_negative_tc_002() throws Exception {
+	public static void Award_point_negative_tc_002() throws Exception {
 		try {
 			str= driver.findElement(By.xpath(OR_reader("redeempoints_amount_invalid_msg"))).getText();
 			Assert.assertEquals(str,td_reader("redeempoints_amount_less_invalid_msg"));
@@ -150,7 +150,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 
 	/*TC 004 -  Validate that user is not able to click on the 'Redeem' button on leaving the field 'Select a gift card' blank" */
 	@When("Click the Redeem button on leaving the field Select a gift card blank")
-	public void redeemButton_giftcardblank() throws Exception {
+	public static void redeemButton_giftcardblank() throws Exception {
 		try{
 //			click("utilities");
 //			click("utilities_award_points");
@@ -192,7 +192,7 @@ public class Award_points_negative_scenarios extends Generic_functions{
 	}
 
 	@Then("Validate the message displayed")
-	public void Award_point_negative_tc_004() throws Exception {
+	public static void Award_point_negative_tc_004() throws Exception {
 		try{
 //			click("redeem_points_giftcard");
 //			text = td_reader("redeem_points_giftcard");

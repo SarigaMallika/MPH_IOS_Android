@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 public class Award_points_positive_scenarios extends Generic_functions{
 	public static boolean value;
 	static WebElement ele;
-	String ere;
+	static String ere;
 	public static WebElement fr;
 	static String str,text;
 	static List<WebElement> grid_elements,drp_list;
@@ -58,7 +58,7 @@ public class Award_points_positive_scenarios extends Generic_functions{
 
 	/*TC 002 - Validate that the user is able to navigated to Utilities screen */
 	@When("Click on Award points tile")
-	public void click_awardpoints() throws Exception {
+	public static void click_awardpoints() throws Exception {
 		try{
 			page_wait(3000);
 			click("utilities_awardpoints");
@@ -81,7 +81,7 @@ public class Award_points_positive_scenarios extends Generic_functions{
 
 	/*TC 003 - Validate that user can click the Tile "Award Points"in the Utilities dashboard*/
 	@Given("User is on redeem points page")
-	public void click_redeem_points_button() throws Exception {
+	public static void click_redeem_points_button() throws Exception {
 		try {
 			page_wait(3000);
 			click("awardpoints_redeeem_points_button");
@@ -114,7 +114,7 @@ public class Award_points_positive_scenarios extends Generic_functions{
 		}	
 	}
 	@Then("Validate user is able to redeem points")
-	public void validateTheRedeemAwardPointsPage() throws Exception {
+	public static void validateTheRedeemAwardPointsPage() throws Exception {
 		try {
 			//			page_wait(3000);			
 			//		click("redeem_points_button");
@@ -127,7 +127,7 @@ public class Award_points_positive_scenarios extends Generic_functions{
 
 	/*TC 004 - Validate that the user is able to navigate to the 'redeemed' page */
 	@When("Navigated to the redeemed page")
-	public void navigate_redeem_page() throws Exception {
+	public static void navigate_redeem_page() throws Exception {
 		try { 
 			//			page_wait(7000);
 			//		 value = driver.findElement(By.xpath(OR_reader("redeemed_page_title"))).isDisplayed();

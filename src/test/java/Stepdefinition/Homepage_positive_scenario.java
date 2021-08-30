@@ -31,7 +31,7 @@ public class Homepage_positive_scenario extends Generic_functions {
 		login(0,0);
 	}
 	@Then("Verify the Welcome page")
-	public void verify_WelcomePage() throws Exception {
+	public static void verify_WelcomePage() throws Exception {
 		try {
 //			page_wait(8000);
 //			value = driver.findElement(By.xpath(OR_reader( "login_title"))).isDisplayed();
@@ -99,7 +99,7 @@ public class Homepage_positive_scenario extends Generic_functions {
 	}
 	/*TC_004 -Validate that the user is navigated to the Second Opinion page on clicking 'Request for second opinion' button*/
 	@When("clicks on the 'Request for second opinion' button")
-	public void clicks_on_request_second_opinion() throws InterruptedException, Exception {
+	public static void clicks_on_request_second_opinion() throws InterruptedException, Exception {
 		try {
 			page_wait(9000);
 			click("homepage_request_second_opinion_tab");
@@ -110,7 +110,7 @@ public class Homepage_positive_scenario extends Generic_functions {
 		}
 	}
 	@Then("navigated to the Second opinion page")
-	public void navigate_to_second_opinion_page() throws Exception {
+	public static void navigate_to_second_opinion_page() throws Exception {
 		try {
 			str1=driver.findElement(By.xpath(OR_reader( "request_second_opinion_title"))).isDisplayed();
 			Assert.assertEquals(true,str1);
@@ -134,7 +134,7 @@ public class Homepage_positive_scenario extends Generic_functions {
 		}				
 	}
 	@Then("navigated to the Refer a friend page")
-	public void navigated_to_refer_a_friend_page() throws Exception {
+	public static void navigated_to_refer_a_friend_page() throws Exception {
 		try {
 			value1=driver.findElement(By.xpath(OR_reader("refer_a_friend_title"))).isDisplayed();
 			Assert.assertEquals(true,value1);

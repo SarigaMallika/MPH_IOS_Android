@@ -15,7 +15,7 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_001_Validate that the mpowered health logo/hamburger in the header*/
 	@Given("Launch URL")
-	public void launch_URL() throws Exception {
+	public static void launch_URL() throws Exception {
 		try {
 			app_launch();
 			driver.resetApp();
@@ -28,7 +28,7 @@ public class Header_positive_scenario extends Generic_functions{
 		}
 	}
 	@When("Navigated to the 'Header' page")
-	public void navigated_header_page() throws Exception {
+	public static void navigated_header_page() throws Exception {
 		try {
 			login(0,0);
 		} catch (Exception e) {
@@ -37,7 +37,7 @@ public class Header_positive_scenario extends Generic_functions{
 		}
 	}	
 	@Then("Verify hamburger in the header")
-	public void header_positive_tc_001() throws Exception {
+	public static void header_positive_tc_001() throws Exception {
 		try {
 			page_wait(9000);
 			page_explicit_wait("home",6000);
@@ -51,7 +51,7 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_002_Validation of the Drop down tab */
 	@Given("Click on Drop down or  hamburger tab")
-	public void click_DropDown_Hamburger() throws Exception {
+	public static void click_DropDown_Hamburger() throws Exception {
 		try {         
 			page_wait(5000);
 			click("hamburger");
@@ -61,19 +61,19 @@ public class Header_positive_scenario extends Generic_functions{
 		}
 	}
 	@Then("Verify the drop down options")
-	public void verify_dropdown_options() throws Exception {
+	public static void verify_dropdown_options() throws Exception {
 		value=driver.findElement(By.xpath(OR_reader("header_profile"))).isDisplayed();
 		Assert.assertEquals(true,value);
 	}
 
 	/* TC_003_Validate profile page on clicking  Your profile tab*/
 	@When("click on  Your profile")
-	public void click_your_profile() throws Exception {	
+	public static void click_your_profile() throws Exception {	
 		click("header_profile");
 		page_wait(7000);
 	}
 	@Then("Verify the profile page")
-	public void verify_profile_page() throws Exception {
+	public static void verify_profile_page() throws Exception {
 		try{
 			value=driver.findElement(By.xpath(OR_reader("header_profile_title"))).isDisplayed();
 			Assert.assertEquals(true,value);
@@ -87,12 +87,12 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/* TC_004_Validate  Your ratings dashboard */
 	@When("click on  Your ratings")
-	public void click_your_ratings() throws Exception {
+	public static void click_your_ratings() throws Exception {
 		page_wait(3000);
 		click("header_rating");
 	}
 	@Then("Verify the ratings dashboard page.")
-	public void verify_Ratings_dashboard() throws Exception {
+	public static void verify_Ratings_dashboard() throws Exception {
 		try{
 			value=driver.findElement(By.xpath(OR_reader("header_rating_title"))).isDisplayed();
 			Assert.assertEquals(true,value);
@@ -107,12 +107,12 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_005_Validate the alerts page */
 	@When("Click on Your alerts icon")
-	public void click_alerts_icon() throws Exception {
+	public static void click_alerts_icon() throws Exception {
 		page_wait(3000);
 		click("header_alert");
 	}
 	@Then("Verify the alerts page")
-	public void verify_alerts_Page() throws Exception {
+	public static void verify_alerts_Page() throws Exception {
 		try {
 			page_wait(2000);
 			value = driver.findElement(By.xpath(OR_reader("header_alert_title"))).isDisplayed();
@@ -126,12 +126,12 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_006_Validate Help or FAQ  page*/
 	@When("click on Help icon")
-	public void click_help_icon() throws Exception {
+	public static void click_help_icon() throws Exception {
 		page_wait(3000);
 		click("header_FAQ");
 	}
 	@Then("Verify  the help or FAQ page")
-	public void TC_007_Validate_Help_or_FAQ_page() throws Exception {
+	public static void TC_007_Validate_Help_or_FAQ_page() throws Exception {
 		try {
 			page_wait(2000);
 			value = driver.findElement(By.xpath(OR_reader("header_FAQ_title"))).isDisplayed();
@@ -145,13 +145,13 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_007_Validate the Contact Us page*/
 	@When("click on  Contact Us")
-	public void click_contact_us() throws Exception {
+	public static void click_contact_us() throws Exception {
 		page_wait(3000);
 		click("header_contact_us");
 		page_wait(7000);
 	}
 	@Then("Verify  Contact Us page")
-	public void verify_contact_us() throws Exception {
+	public static void verify_contact_us() throws Exception {
 		try {
 			page_explicit_wait("header_contact_fname",4000);
 			value = driver.findElement(By.xpath(OR_reader("header_contact_fname"))).isDisplayed();
@@ -186,12 +186,12 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_008_Validate  Privacy Policy dialogue box on clicking on the Privacy Policy*/
 	@When("click on  Privacy Policy")
-	public void click_privacy_policy() throws Exception {
+	public static void click_privacy_policy() throws Exception {
 		page_wait(3000);
 		click("header_privacy_policy");
 	}
 	@Then("Verify the dialogue box")
-	public void verify_dialogue_box() throws Exception {
+	public static void verify_dialogue_box() throws Exception {
 		try {
 			page_wait(8000);
 			value = driver.findElement(By.xpath(OR_reader("header_privacy_ok"))).isDisplayed();
@@ -205,13 +205,13 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_009_Validate Terms & Conditions dialogue box on clicking on the Terms & Conditions*/
 	@When("click on  Terms & Conditions")
-	public void click_terms_conditions() throws Exception {
+	public static void click_terms_conditions() throws Exception {
 		page_wait(3000);
 		click("header_terms_conditions");
 		page_wait(9000);
 	}
 	@Then("Verify the  dialogue box on terms and conditions page")
-	public void verify_terms_conditions() throws Exception {
+	public static void verify_terms_conditions() throws Exception {
 		try {
 			value = driver.findElement(By.xpath(OR_reader("header_terms_conditions_ok"))).isDisplayed();
 			Assert.assertEquals(value,true);
@@ -224,7 +224,7 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_010_Validate that the user is navigated to the Feedback Port   page  on clicking Feedback*/
 	@When("click on  Feedback")
-	public void click_feedback() throws Exception {
+	public static void click_feedback() throws Exception {
 		if((platformName.equals("Android"))){
 			page_wait(3000);
 			click("header_feedback");
@@ -237,7 +237,7 @@ public class Header_positive_scenario extends Generic_functions{
 		}		
 	}
 	@And("Verify the Feedback Port.")
-	public void verify_feedback_port() throws Exception {
+	public static void verify_feedback_port() throws Exception {
 		try {
 			page_wait(20000);
 			driver.findElement(By.xpath(OR_reader("header_feedback_your_feedback"))).sendKeys(td_reader("header_feedback_your_feedback"));
@@ -252,7 +252,7 @@ public class Header_positive_scenario extends Generic_functions{
 		}
 	}
 	@Then("Verify the thank you message")
-	public void verify_thankYou_message() throws Exception {
+	public static void verify_thankYou_message() throws Exception {
 		try{
 			page_wait(10000);
 			value = driver.findElement(By.xpath(OR_reader("header_feedback_thankyou"))).isDisplayed();
@@ -275,7 +275,7 @@ public class Header_positive_scenario extends Generic_functions{
 
 	/*TC_011_Validate the Landing page on clicking Log out icon*/
 	@When("click on Log out icon")
-	public void click_logOut() throws Exception {
+	public static void click_logOut() throws Exception {
 		try {
 			if((platformName.equals("Android"))){
 				page_wait(5000);
@@ -294,7 +294,7 @@ public class Header_positive_scenario extends Generic_functions{
 		}
 	}
 	@Then("Verify navigation to the Landing  page")
-	public void verify_landing_page() throws Exception {
+	public static void verify_landing_page() throws Exception {
 		value=driver.findElement(By.xpath(OR_reader("welcome_page_title"))).isDisplayed();
 		Assert.assertEquals(true,value);
 		close();

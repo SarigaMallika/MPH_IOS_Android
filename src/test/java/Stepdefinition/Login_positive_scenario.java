@@ -13,7 +13,7 @@ public class Login_positive_scenario extends Generic_functions{
 
 	/*TC 001 - Validate that the'Phone number' field is prefixed with '+1' country code*/
 	@Given("Launch the URL")
-	public void app_launching() throws Exception {
+	public static void app_launching() throws Exception {
 		try {
 			app_launch();
 		} catch (Exception e) {
@@ -21,7 +21,7 @@ public class Login_positive_scenario extends Generic_functions{
 		}
 	}	
 	@When("Clicks on 'Login' button")
-	public void login() throws Exception {
+	public static void login() throws Exception {
 		try {
 			if (platformName.equals("iOS")) {
 				page_wait(2000);
@@ -62,7 +62,7 @@ public class Login_positive_scenario extends Generic_functions{
 		}
 	}
 	@Then("navigated to Forgot password page")
-	public void navigated_to_forgot_password_page() {
+	public static void navigated_to_forgot_password_page() {
 		//	try {
 		//		value = driver.findElement(By.xpath(OR_reader("Object Locator", "send_resend_link"))).isDisplayed();
 		//		Assert.assertEquals(true,value);
@@ -87,7 +87,7 @@ public class Login_positive_scenario extends Generic_functions{
 		}
 	}	
 	@Then("navigated to Sign up page")
-	public void navigate_to_signup_page()  throws Exception {
+	public static void navigate_to_signup_page()  throws Exception {
 		//       try {
 		//   		value = driver.findElement(By.xpath(OR_reader("Object Locator", "signup_first_name"))).isDisplayed();
 		//			Assert.assertEquals(true,value);
@@ -127,7 +127,7 @@ public class Login_positive_scenario extends Generic_functions{
 		}
 	}
 	@Then("clicks on 'login'")
-	public void click_login() throws Exception {
+	public static void click_login() throws Exception {
 		try {
 			click("login");
 			page_wait(9000);

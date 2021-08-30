@@ -12,7 +12,7 @@ public class Signup_negative_scenario extends Generic_functions{
 
 	/* TC_001 -Validate that the user should get a  validation message  on entering invalid 'first name' and 'last name' */
 	@Given("Launch  URL and click on signup")
-	public void app_launching() throws Exception {
+	public static void app_launching() throws Exception {
 		try {
 			app_launch();
 			page_wait(4000);

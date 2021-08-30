@@ -1,10 +1,7 @@
 package Stepdefinition;
 
-import java.io.IOException;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
-
 import Reusable_Functions.Generic_functions;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -80,7 +77,7 @@ public class Signup_positive_scenario extends Generic_functions{
 	
 	/* TC_003 - Validate that the data entered in both Password and Confirm password fields are masked */
 	@When("Enter details in the 'Password' and 'Confirmed Password' field should be masked")
-	public void enter_password() throws Exception {
+	public static void enter_password() throws Exception {
 		try {		
 			click("signup_password");
 			driver.findElement(By.xpath(OR_reader("signup_password"))).sendKeys(td_reader("signup_password",1));
@@ -98,7 +95,7 @@ public class Signup_positive_scenario extends Generic_functions{
 
 	/* TC_004 - Validate that the password should be displayed on an eye click for Password fields*/
 	@When("Clicks on the Eye")
-	public void click_on_show_password() throws Exception {
+	public static void click_on_show_password() throws Exception {
 		try {
 			click("signup_page_back");
 			page_wait(3000);
@@ -131,7 +128,7 @@ public class Signup_positive_scenario extends Generic_functions{
 
 	/* TC_005 - Validate the Confirm password field by comparing data entered in the Password field */ 
 	@When("Enter same values of 'Password' in the 'Confirmed Password' field")
-	public void enter_valid_password() throws Exception {
+	public static void enter_valid_password() throws Exception {
 		try {
 			click("signup_page_back");
 			page_wait(3000);
@@ -150,7 +147,7 @@ public class Signup_positive_scenario extends Generic_functions{
 
 	/* TC_006 -  Validate user is able to click on Sign Up with valid credentials */
 	@When("Enter valid credentials and apply link should be enabled after adding referral code")
-	public void enter_valid_cred() throws Exception {
+	public static void enter_valid_cred() throws Exception {
 		try {
 			click("signup_page_back");
 			page_wait(3000);
@@ -170,7 +167,7 @@ public class Signup_positive_scenario extends Generic_functions{
 		}
 	}	
 	@Then("After Click on Apply, validation message is displayed")
-	public void verify_OTP_page() throws Exception {
+	public static void verify_OTP_page() throws Exception {
 		try {
 			click("signup_apply_button");			
 			if((platformName.equals("iOS"))){
@@ -190,7 +187,7 @@ public class Signup_positive_scenario extends Generic_functions{
 
 	/* Tc_007 - Verify the scenario when navigate to the otp Login page */
 	@Given("Click on Resend otp and user will get the validation message")
-	public void enter_otp() throws Exception {
+	public static void enter_otp() throws Exception {
 		try {
 			value1 = driver.findElement(By.xpath(OR_reader("otp_title"))).isDisplayed();
 			Assert.assertEquals(true, value1);
@@ -217,7 +214,7 @@ public class Signup_positive_scenario extends Generic_functions{
 		}		
 	}
 	@Then("Click on verify button")
-	public void click_verify() throws Exception, InterruptedException {
+	public static void click_verify() throws Exception, InterruptedException {
 		try {
 			page_wait(5000);
 			click("verify");
